@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 import Testimonial from "./components/Testimonial";
 
 export default function Home() {
@@ -35,8 +36,10 @@ export default function Home() {
       >
         <div className="container  py-24 mx-auto">
           <div className=" w-[90%] mx-auto flex flex-wrap">
-            <img
+            <Image
               alt="ecommerce"
+              width={500}
+              height={300}
               className="lg:w-1/2 w-full h-[34rem] object-cover object-center rounded-[6rem]"
               src="https://img.freepik.com/free-photo/side-view-doctor-writing-prescription_23-2148231339.jpg?ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
             />
@@ -248,11 +251,14 @@ export default function Home() {
               {serviceData?.map((data) => (
                 <CarouselItem key={data.id} className="flex gap-4 py-2 ">
                   <div className="flex flex-col w-[30rem]  h-[28rem] items-center justify-center rounded-xl shadow-xl px-4 py-2">
-                    <img
+                    <Image
                       alt="service"
                       className="flex-shrink-0 rounded-lg w-4/5 h-1/2 object-cover object-center mb-4"
                       src={data.image}
+                      width={800}
+                      height={600}
                     />
+
                     <h2 className="title-font font-semibold text-lg py-2 text-gray-900">
                       {data.title}
                     </h2>

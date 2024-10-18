@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Testimonial = () => {
   const teamMembers = [
     {
@@ -49,11 +51,14 @@ const Testimonial = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="px-4 lg:w-1/4 md:w-1/2">
               <div className="h-full flex flex-col items-center text-center">
-                <img
+                <Image
                   alt={`Team member ${member.name}`}
                   className="flex-shrink-0 rounded-lg w-4/5 h-1/2 object-cover object-center mb-4"
                   src={member.image}
+                  width={500}
+                  height={300}
                 />
+
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
                     {member.name}

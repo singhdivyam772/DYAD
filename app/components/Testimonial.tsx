@@ -49,7 +49,10 @@ const Testimonial = () => {
         </div>
         <div className="flex flex-wrap  ">
           {teamMembers.map((member, index) => (
-            <div key={index} className="px-4 lg:w-1/4 md:w-1/2">
+            <div
+              key={index}
+              className="px-4 lg:w-1/4 md:w-1/2 shadow-md space-x-4 "
+            >
               <div className="h-full flex flex-col items-center text-center">
                 <Image
                   alt={`Team member ${member.name}`}

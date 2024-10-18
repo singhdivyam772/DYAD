@@ -27,14 +27,14 @@ export default function Home() {
               className="lg:w-1/2 w-full h-[34rem] object-cover object-center rounded-[6rem]"
               src="https://img.freepik.com/free-photo/side-view-doctor-writing-prescription_23-2148231339.jpg?ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
             />
-            <div className=" animated-element lg:w-1/2 w-full  lg:py-6 mt-6 lg:mt-12 relative  bg-cover bg-center ">
-              <div className=" pl-4  bg-[#A3A3A3]/2 rounded-xl h-full">
+            <div className="   lg:w-1/2 w-full lg:py-6 mt-6 lg:mt-12 relative  bg-cover bg-center ">
+              <div className=" pl-4  h-full">
                 {" "}
                 {/* <span className=" pl-4 text-[3rem]">👨🏻‍⚕️</span> */}
                 <h1 className=" font-cabinetgrotesk   pl-4 bg-gradient-text bg-clip-text text-transparent  text-[2.8rem]  title-font font-semibold mb-1">
                   We Are Here To Change That Narrative
                 </h1>
-                <p className="leading-[2.2rem] font-cabinetgrotesk text-[1.4rem] py-2 pl-4">
+                <p className="leading-[2.2rem] text-[1.4rem] py-2 pl-4">
                   At Dyad Practice Solutions, we understand the unique
                   challenges that physicians and practice administrators face
                   daily. The complexities of managing a practice's financial and

@@ -1,5 +1,6 @@
 "use client";
 
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -40,25 +41,35 @@ const Service = () => {
           className="relative w-[95%] shadow-custom h-[29rem] md:mb-10"
           onMouseLeave={plugin.current.reset}
         >
-          <CarouselContent className="w-[30rem] h-full">
+          <CarouselContent className="w-full h-full">
             {serviceData.map((data) => (
-              <CarouselItem key={data.id} className="flex gap-4 py-2">
-                <div className="flex flex-col w-[30rem] h-[28rem] items-center justify-center rounded-xl shadow-xl px-4 py-2">
-                  <Image
-                    alt="service"
-                    className="flex-shrink-0 rounded-lg w-4/5 h-1/2 object-cover object-center mb-4"
-                    src={data.image}
-                    width={800}
-                    height={600}
-                  />
-                  <h2 className="title-font font-semibold text-lg py-2 text-gray-900">
-                    {data.title}
-                  </h2>
-                  <p className="text-[1rem] py-1 mb-4">{data.description}</p>
+              <CarouselItem
+                key={data.id}
+                className="pl-1 basis-1/3 shadow-2xl cursor-pointer"
+              >
+                <div className="p-1">
+                  <Card className="flex w-[30rem] h-[28rem]  text-black shadow-2xl border-0 items-start justify-start p-2 ">
+                    <CardContent className="flex flex-col items-center justify-center py-3 text-lg">
+                      <Image
+                        alt="service"
+                        className="rounded-lg w-3/4 h-1/2 object-contain object-center mb-4"
+                        src={data.image}
+                        width={800}
+                        height={600}
+                      />
+                      <h2 className="font-semibold text-lg py-2 text-gray-900">
+                        {data.title}
+                      </h2>
+                      <p className="text-[0.9rem] py-1 mb-4">
+                        {data.description}
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
+
           <CarouselPrevious className="bg-indigo-300" />
           <CarouselNext className="bg-indigo-300" />
         </Carousel>
@@ -70,14 +81,6 @@ const Service = () => {
 export default Service;
 
 const serviceData = [
-  {
-    id: 0,
-    title: "Startup Services Consulting",
-    description:
-      "We offer guidance for startups, focusing on business planning and market entry strategies. Our services help accelerate growth and turn your vision into a successful enterprise.",
-    image:
-      "https://www.shutterstock.com/shutterstock/photos/1931518415/display_1500/stock-photo-business-network-concept-group-of-people-shaking-hands-customer-support-human-relationship-1931518415.jpg",
-  },
   {
     id: 1,
     title: " Full Revenue Cycle Management (RCM)",
@@ -137,5 +140,13 @@ const serviceData = [
       "  We develop tailored digital marketing and social media strategies to enhance your online presence. Our services drive engagement, increase brand visibility, and help you connect effectively with your target audience.",
     image:
       "https://www.shutterstock.com/shutterstock/photos/2473413003/display_1500/stock-photo-human-with-digital-online-marketing-commerce-sale-website-advertising-promotion-of-products-2473413003.jpg",
+  },
+  {
+    id: 0,
+    title: "Startup Services Consulting",
+    description:
+      "We offer guidance for startups, focusing on business planning and market entry strategies. Our services help accelerate growth and turn your vision into a successful enterprise.",
+    image:
+      "https://www.shutterstock.com/shutterstock/photos/1931518415/display_1500/stock-photo-business-network-concept-group-of-people-shaking-hands-customer-support-human-relationship-1931518415.jpg",
   },
 ];

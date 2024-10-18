@@ -296,7 +296,7 @@ const serviceData = [
     description:
       "  We offer complete revenue cycle management, optimizing every step from patient registration to payment collection. Our services enhance efficiency and revenue, helping your healthcare organization succeed.",
     image:
-      "https://media.istockphoto.com/id/1358728498/photo/growth-the-companys-annual-revenue-to-success-business-person-analyzing-financial-annual.webp?s=2048x2048&w=is&k=20&c=K3IUnKG9NbM7fA9PcDyK1nmuikbvj1dyefqeBiuJO7Y=",
+      "https://www.shutterstock.com/image-photo/responsibility-center-management-business-concept-600nw-1337404751.jpg",
   },
   {
     id: 2,

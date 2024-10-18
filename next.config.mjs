@@ -4,8 +4,8 @@ const nextConfig = {
     domains: [
       "www.shutterstock.com",
       "img.freepik.com",
-      "media.istockphoto.com",
-    ], // Add the necessary domains here
+      "https://www.istockphoto.com",
+    ],
   },
 };
 

@@ -19,7 +19,7 @@ const Service = () => {
   return (
     <section
       id="services"
-      className="text-gray-600 font-cabinetgrotesk body-font"
+      className="text-gray-600 font-cabinetgrotesk py-8  body-font"
     >
       <div className="container px-5 flex justify-center mt-12 items-center flex-col py-18 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">

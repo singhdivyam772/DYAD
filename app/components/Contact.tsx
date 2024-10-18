@@ -1,7 +1,10 @@
 const Contact = () => {
   return (
-    <section id="contact" className="text-gray-600 body-font relative ">
-      <div className="container px-5 py-18 mx-auto flex flex-wrap sm:flex-nowrap">
+    <section
+      id="contact"
+      className="text-gray-600 pt-[5.5rem]  body-font relative "
+    >
+      <div className="container px-5 pt-18 mx-auto flex flex-wrap sm:flex-nowrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"

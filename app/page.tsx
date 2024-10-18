@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* about, service, contact  */}
       <section className="text-gray-600 font-cabinetgrotesk body-font">
-        <div className="container px-10 py-24 mx-auto">
+        <div className="container px-10 pt-24 mx-auto">
           <div className="flex flex-wrap -m-3 ">
             {aboutData.map((data) => (
               <div

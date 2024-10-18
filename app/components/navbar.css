@@ -1,0 +1,6 @@
+.shadow-navShadow {
+  --tw-shadow: 0px 2px 16px 0px #00000014;
+  --tw-shadow-colored: 0px 2px 16px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

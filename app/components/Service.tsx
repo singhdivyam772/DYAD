@@ -12,7 +12,6 @@ import Image from "next/image";
 import React from "react";
 
 const Service = () => {
-  const limitedAboutSubData = serviceData.slice(0, 3);
   const plugin = React.useRef(
     Autoplay({ delay: 1500, stopOnInteraction: true })
   );

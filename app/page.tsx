@@ -1,6 +1,4 @@
 "use client";
-import Autoplay from "embla-carousel-autoplay";
-import * as React from "react";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -11,15 +9,6 @@ import Service from "./components/Service";
 import Testimonial from "./components/Testimonial";
 
 export default function Home() {
-  const limitedAboutSubData = aboutSubData.slice(0, 3);
-
-  while (limitedAboutSubData.length > 3) {
-    limitedAboutSubData.push(...limitedAboutSubData);
-  }
-  const plugin = React.useRef(
-    Autoplay({ delay: 1500, stopOnInteraction: true })
-  );
-
   return (
     <div className="">
       <Navbar />

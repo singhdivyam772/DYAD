@@ -331,7 +331,7 @@ const serviceData = [
     description:
       "We provide comprehensive lien management services for personal injury (PI) and workers' compensation (WC) cases. Our expertise ensures efficient tracking and resolution of liens, optimizing financial outcomes for your healthcare organization.",
     image:
-      "https://media.istockphoto.com/id/1444291518/photo/black-woman-working-from-home-office.jpg?b=1&s=612x612&w=0&k=20&c=U7i_Zhk7BuNqPpceKZbbzlGCuqn4P70mW6mRaRgnB20=",
+      "https://www.shutterstock.com/image-photo/blockchain-technology-concept-revolutionizing-industries-260nw-2481711293.jpg",
   },
   {
     id: 7,
@@ -348,7 +348,7 @@ const serviceData = [
     description:
       "  We develop tailored digital marketing and social media strategies to enhance your online presence. Our services drive engagement, increase brand visibility, and help you connect effectively with your target audience.",
     image:
-      "https://media.istockphoto.com/id/1443560890/photo/digital-marketing-business-technology-concept-website-advertisement-email-social-media.webp?s=2048x2048&w=is&k=20&c=B0aClNHXUKSOsHPwEVuYWT2u_haG5YGGo24mrzhqcSw=",
+      "https://www.shutterstock.com/shutterstock/photos/2473413003/display_1500/stock-photo-human-with-digital-online-marketing-commerce-sale-website-advertising-promotion-of-products-2473413003.jpg",
   },
 ];
 

@@ -151,14 +151,12 @@ html {
   }
 }
 
-/* From Uiverse.io by vamsidevendrakumar */
 .card {
-  width: 340px; /* Keep the card width */
-  height: 400px; /* Keep the card height */
-  perspective: 1000px; /* Perspective for 3D effect */
+  width: 340px;
+  height: 400px;
+  perspective: 1000px;
 }
 
-/* Card inner styles */
 .card-inner {
   width: 100%;
   height: 100%;
@@ -168,12 +166,10 @@ html {
   cursor: pointer;
 }
 
-/* Card hover effect */
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-/* Card front and back styles */
 .card-front,
 .card-back {
   position: absolute;
@@ -182,25 +178,23 @@ html {
   backface-visibility: hidden;
 }
 
-/* Front styling */
 .card-front {
   opacity: 100px;
-  display: flex; /* Flexbox for alignment */
-  align-items: center; /* Center vertically */
+  display: flex;
+  align-items: center;
 
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
   justify-content: start;
-  font-size: 24px; /* Font size */
-  transform: rotateY(0deg); /* Initial rotation */
+  font-size: 24px;
+  transform: rotateY(0deg);
 }
 
-/* Back styling */
 .card-back {
-  display: flex; /* Flexbox for alignment */
-  align-items: center; /* Center vertically */
+  display: flex;
+  align-items: center;
 
-  border-radius: 10px; /* Rounded corners */
-  justify-content: center; /* Center horizontally */
-  font-size: 24px; /* Font size */
-  transform: rotateY(180deg); /* Initial rotation for back */
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
 }

@@ -8,26 +8,23 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-
 import Image from "next/image";
 import React from "react";
+
 const Service = () => {
   const limitedAboutSubData = serviceData.slice(0, 3);
-
-  while (limitedAboutSubData.length > 3) {
-    limitedAboutSubData.push(...limitedAboutSubData);
-  }
   const plugin = React.useRef(
     Autoplay({ delay: 1500, stopOnInteraction: true })
   );
+
   return (
     <section
       id="services"
-      className="text-gray-600  font-cabinetgrotesk body-font"
+      className="text-gray-600 font-cabinetgrotesk body-font"
     >
       <div className="container px-5 flex justify-center mt-12 items-center flex-col py-18 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 className=" bg-gradient-text bg-clip-text text-transparent text-3xl font-semibold title-font mb-4 text-gray-900">
+          <h1 className="bg-gradient-text bg-clip-text text-transparent text-3xl font-semibold title-font mb-4 text-gray-900">
             SERVICES
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
@@ -41,14 +38,13 @@ const Service = () => {
         </div>
         <Carousel
           plugins={[plugin.current]}
-          className="relative w-[95%]  shadow-custom h-[29rem] md:mb-10"
-          // onMouseEnter={plugin.current.stop}
+          className="relative w-[95%] shadow-custom h-[29rem] md:mb-10"
           onMouseLeave={plugin.current.reset}
         >
-          <CarouselContent className=" w-[30rem] h-full">
-            {serviceData?.map((data) => (
-              <CarouselItem key={data.id} className="flex gap-4 py-2 ">
-                <div className="flex flex-col w-[30rem]  h-[28rem] items-center justify-center rounded-xl shadow-xl px-4 py-2">
+          <CarouselContent className="w-[30rem] h-full">
+            {serviceData.map((data) => (
+              <CarouselItem key={data.id} className="flex gap-4 py-2">
+                <div className="flex flex-col w-[30rem] h-[28rem] items-center justify-center rounded-xl shadow-xl px-4 py-2">
                   <Image
                     alt="service"
                     className="flex-shrink-0 rounded-lg w-4/5 h-1/2 object-cover object-center mb-4"
@@ -56,7 +52,6 @@ const Service = () => {
                     width={800}
                     height={600}
                   />
-
                   <h2 className="title-font font-semibold text-lg py-2 text-gray-900">
                     {data.title}
                   </h2>
@@ -65,7 +60,7 @@ const Service = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-indigo-300 " />
+          <CarouselPrevious className="bg-indigo-300" />
           <CarouselNext className="bg-indigo-300" />
         </Carousel>
       </div>

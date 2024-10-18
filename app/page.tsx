@@ -97,10 +97,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* about section */}
       <About />
 
-      {/* service */}
       <Service />
 
       <Testimonial />
@@ -133,71 +131,4 @@ const aboutData = [
     description:
       "Get in touch with DYAD for any inquiries or to schedule a diagnostic test. Reach us at +91-1111111111 or email us at dyad@gmail.com. Our team is here to assist you with all your healthcare needs.",
   },
-];
-
-const aboutSubData = [
-  {
-    id: 0,
-    title: `MISSION`,
-    description: ` Historical Foundation: In 1908, William J. Mayo hired Harry Harwick to manage the
-business and operations of the Mayo Clinic, pioneering a new leadership model in healthcare:
-the Dyad. At its core, a Dyad is a partnership ⎼ a seamless collaboration between a physician
-leader and a non-physician administrator to elevate patient care and practice performance.
-
-`,
-    description2: ` Inspiration and Purpose: Dyad Practice Solutions was born out of a critical need ⎼ to
-
-address concerns physicians face with practice operations and to safeguard their financial well-
-being and autonomy.
-
-`,
-    description3: `Redefining Healthcare Partnership: At Dyad Practice Solutions, we are reshaping the
-landscape of physician support. Our commitment is to forge transformative long term
-partnerships that go beyond traditional standards. 
-
-`,
-  },
-
-  {
-    id: 1,
-    title: `VALUES`,
-    description: `Physician Autonomy: We empower physicians to maintain their independence while
-realizing pricing and efficiency benefits from the economies of scale and sophistication of a
-larger health system, without the interference or agenda of private equity involvement. 
-Transparency & Accountability: We believe in accountable partnership
-model ⎼ maximizing revenues while minimizing costs .`,
-
-    description2: ` Partnership: Our goal is to establish lasting partnerships. We’re redefining outdated market
-standards by offering unmatched servic  e quality and execution at competitive prices, serving as
-a ally and fiduciary for our physicians.`,
-
-    description3: `Dependability & Quality: With third-party audits conducted by a chartered accounting firm
-and industry subject matter experts, our services are not only dependable.`,
-  },
-
-  {
-    id: 2,
-    title: `APPROACH`,
-    description: `Enterprise Risk Management (ERM): At Dyad, we implement the
-     COSO ERM and ISO 31000 frameworks to ensure a thorough and effective
-     risk management strategy. Our services are assessed through people,
-      processes, systems, technology, and various risks. We prioritize
-       transparency and accountability, maintaining robust business continuity 
-       measures.`,
-    description2: `People: We provide physicians comprehensive solutions 
-    through a diverse team of certified coders, auditors, accountants, 
-    legal experts, and digital marketers.
-`,
-    description3: `Processes & Systems: We implement automated, paperless 
-    workflows with secure audit trails to reduce costs, mitigate risks, and 
-    optimize revenue. Each process is independently audited and routinely 
-    tested for best-in-class service quality.
-`,
-  },
-
-  // {
-  //   id: 3,
-  //   title: `INSIGHTS`,
-  //   description: `description`,
-  // },
 ];

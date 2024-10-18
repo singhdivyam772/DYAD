@@ -3,14 +3,6 @@ import Image from "next/image";
 const Testimonial = () => {
   const teamMembers = [
     {
-      name: "Dr. Alper Kamu",
-      title: "Cardiologist",
-      image:
-        "https://media.istockphoto.com/id/181855223/photo/doctor.jpg?b=1&s=612x612&w=0&k=20&c=Ztz4LNTTm9euG61k4TM-h2kFn_kIswz9qNqSnW3kDus=",
-      description:
-        "Dedicated to improving heart health and preventing heart disease.",
-    },
-    {
       name: "Dr. Holden Caulfield",
       title: "Pediatrician",
       image:
@@ -30,6 +22,14 @@ const Testimonial = () => {
       image:
         "https://img.freepik.com/premium-photo/woman-white-coat-giving-thumbs-up_81048-50370.jpg?ga=GA1.1.882004537.1726815125&semt=ais_hybrid",
       description: "Committed to providing the best care for skin health.",
+    },
+    {
+      name: "Dr. Alper Kamu",
+      title: "Cardiologist",
+      image:
+        "https://www.shutterstock.com/image-photo/female-gynecologist-docotors-overall-medical-260nw-1579778299.jpg",
+      description:
+        "Dedicated to improving heart health and preventing heart disease.",
     },
   ];
 

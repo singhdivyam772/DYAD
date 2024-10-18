@@ -32,7 +32,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="text-gray-600 body-font">
+    <section id="testimonial" className="text-gray-600 body-font">
       <div className="container px-5 py-20 mx-auto">
         <div className="flex flex-col text-center w-full mb-14">
           <h1 className="text-3xl font-semibold bg-gradient-text bg-clip-text text-transparent title-font mb-4 text-gray-900">

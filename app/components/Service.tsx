@@ -49,11 +49,11 @@ const Service = () => {
                 className="pl-1 md:basis-1/2 lg:basis-2/5  cursor-pointer"
               >
                 <div className="p-1">
-                  <Card className="flex aspect-rectangle text-black border-0 items-start justify-start min-h-[30rem] p-4">
+                  <Card className="flex aspect-rectangle text-black border-0 items-start justify-start min-h-[33rem] p-4">
                     <CardContent className="flex flex-col items-center justify-center py-3 text-lg">
                       <Image
                         alt="service"
-                        className="rounded-lg w-3/4 h-1/2 object-contain object-center mb-4"
+                        className="rounded-lg w-3/4 h-1/2  object-contain object-center mb-4"
                         src={data.image}
                         width={800}
                         height={600}

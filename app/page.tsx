@@ -25,7 +25,7 @@ export default function Home() {
               width={500}
               height={300}
               className="lg:w-1/2 w-full max-h-[34rem] object-cover object-center rounded-[6rem]"
-              src="https://img.freepik.com/free-photo/young-doctor-supporting-his-patient_1098-2237.jpg?size=626&ext=jpg&ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
+              src="https://img.freepik.com/free-photo/specialist-giving-prescription-paper-sick-patient-checkup-visit_482257-27197.jpg?size=626&ext=jpg&ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
             />
             <div className="   lg:w-1/2 w-full lg:py-6 mt-6 lg:mt-12 relative  bg-cover bg-center ">
               <div className=" pl-4  h-full">

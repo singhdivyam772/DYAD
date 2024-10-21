@@ -18,23 +18,23 @@ export default function Home() {
         id="home"
         className="text-gray-600 font-roboto body-font scroll-smooth overflow-hidden bg-[url('https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.506489367.1728115941&semt=ais_hybrid')]"
       >
-        <div className="container  py-24 mx-auto">
+        <div className="container md:py-24 py-20 mx-auto">
           <div className=" w-[90%] mx-auto flex flex-wrap">
             <Image
               alt="ecommerce"
               width={500}
               height={300}
-              className="lg:w-1/2 w-full h-[34rem] object-cover object-center rounded-[6rem]"
-              src="https://img.freepik.com/free-photo/side-view-doctor-writing-prescription_23-2148231339.jpg?ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
+              className="lg:w-1/2 w-full max-h-[34rem] object-cover object-center rounded-[6rem]"
+              src="https://img.freepik.com/free-photo/young-doctor-supporting-his-patient_1098-2237.jpg?size=626&ext=jpg&ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
             />
             <div className="   lg:w-1/2 w-full lg:py-6 mt-6 lg:mt-12 relative  bg-cover bg-center ">
               <div className=" pl-4  h-full">
                 {" "}
                 {/* <span className=" pl-4 text-[3rem]">👨🏻‍⚕️</span> */}
-                <h1 className=" font-cabinetgrotesk   pl-4 bg-gradient-text bg-clip-text text-transparent  text-[2.8rem]  title-font font-semibold mb-1">
+                <h1 className=" font-cabinetgrotesk   lg:pl-4 pl-2 bg-gradient-text bg-clip-text text-transparent  lg:text-[2.8rem] text-[1.7rem]  title-font font-semibold mb-1">
                   We Are Here To Change That Narrative
                 </h1>
-                <p className="leading-[2.2rem] text-[1.4rem] py-2 pl-4">
+                <p className="leading-[2.2rem] lg:text-[1.4rem] text-[1.2rem] py-2 pl-4">
                   At Dyad Practice Solutions, we understand the unique
                   challenges that physicians and practice administrators face
                   daily. The complexities of managing a practice's financial and
@@ -42,7 +42,10 @@ export default function Home() {
                   matters ⎼ providing exceptional patient care. We are here to
                   change that narrative . . .
                 </p>
-                <a href="#about" className="home-button mx-auto w-[40%] mt-10">
+                <a
+                  href="#about"
+                  className="home-button mx-auto md:w-[40%] lg:mt-10 mt-2"
+                >
                   Know More
                   <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
                     <path
@@ -59,8 +62,8 @@ export default function Home() {
       </section>
 
       {/* about, service, contact  */}
-      <section className="text-gray-600 font-cabinetgrotesk body-font">
-        <div className="container px-10 pt-24 mx-auto">
+      <section className="text-gray-600 font-roboto body-font">
+        <div className="container lg:px-10 px-3 pt-24 mx-auto">
           <div className="flex flex-wrap -m-3 ">
             {aboutData.map((data) => (
               <div
@@ -68,10 +71,12 @@ export default function Home() {
                 className="p-4 lg:w-1/3 hover:scale-110 transition-all duration-700"
               >
                 <div className="h-full bg-gray-100 gap-4 shadow-lg bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                  <h1 className="title-font  text-2xl font-medium text-gray-900 mb-3">
                     {data.title}
                   </h1>
-                  <p className="leading-relaxed mb-3">{data.description}</p>
+                  <p className="leading-relaxed mb-3 text-xl">
+                    {data.description}
+                  </p>
                   <a
                     href={data.scrollId}
                     className="text-purple-500 inline-flex items-center  cursor-pointer"
@@ -98,11 +103,8 @@ export default function Home() {
       </section>
 
       <About />
-
       <Service />
-
       <Testimonial />
-
       <Contact />
       <Footer />
     </div>
@@ -129,6 +131,6 @@ const aboutData = [
     scrollId: "#contact",
     title: "Contact",
     description:
-      "Get in touch with DYAD for any inquiries or to schedule a diagnostic test. Reach us at +91-1111111111 or email us at dyad@gmail.com. Our team is here to assist you with all your healthcare needs.",
+      "Get in touch with DYAD for any inquiries or to schedule a diagnostic test. Reach us at dyad@gmail.com. Our team is here to assist you with all your healthcare needs.",
   },
 ];

@@ -20,11 +20,11 @@ const Service = () => {
   return (
     <section
       id="services"
-      className="text-gray-600 font-cabinetgrotesk py-8  body-font"
+      className="text-gray-600 font-roboto py-8  body-font"
     >
       <div className="container px-5 flex justify-center mt-12 items-center flex-col py-18 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 className="bg-gradient-text bg-clip-text text-transparent text-3xl font-semibold title-font mb-4 text-gray-900">
+          <h1 className="bg-gradient-text bg-clip-text text-transparent text-2xl font-semibold title-font mb-4 text-gray-900">
             SERVICES
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
@@ -36,19 +36,20 @@ const Service = () => {
             enterprise.
           </p>
         </div>
+
         <Carousel
           plugins={[plugin.current]}
-          className="relative w-[95%] shadow-custom h-[29rem] md:mb-10"
+          className="relative w-[95%] md:mb-10"
           onMouseLeave={plugin.current.reset}
         >
-          <CarouselContent className="w-full h-full">
+          <CarouselContent className="">
             {serviceData.map((data) => (
               <CarouselItem
                 key={data.id}
-                className="pl-1 basis-1/3 shadow-2xl cursor-pointer"
+                className="pl-1 md:basis-1/2 lg:basis-2/5  cursor-pointer"
               >
                 <div className="p-1">
-                  <Card className="flex w-[30rem] h-[28rem]  text-black shadow-2xl border-0 items-start justify-start p-2 ">
+                  <Card className="flex aspect-rectangle text-black border-0 items-start justify-start min-h-[30rem] p-4">
                     <CardContent className="flex flex-col items-center justify-center py-3 text-lg">
                       <Image
                         alt="service"
@@ -60,9 +61,7 @@ const Service = () => {
                       <h2 className="font-semibold text-lg py-2 text-gray-900">
                         {data.title}
                       </h2>
-                      <p className="text-[0.9rem] py-1 mb-4">
-                        {data.description}
-                      </p>
+                      <p className="text-lg py-1 mb-4">{data.description}</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -70,8 +69,8 @@ const Service = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="bg-indigo-300" />
-          <CarouselNext className="bg-indigo-300" />
+          <CarouselPrevious className="bg-indigo-300 lg:flex hidden" />
+          <CarouselNext className="bg-indigo-300 lg:flex hidden" />
         </Carousel>
       </div>
     </section>

@@ -6,6 +6,7 @@ const nextConfig = {
       "img.freepik.com",
       "media.istockphoto.com",
       "https://www.istockphoto.com",
+      "image.shutterstock.com",
     ],
   },
 };

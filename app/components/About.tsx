@@ -2,11 +2,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-gray-600 pt-[5rem]  font-cabinetgrotesk body-font"
+      className="text-gray-600 pt-[5rem]  font-roboto body-font"
     >
       <div className="container px-5  mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className=" bg-gradient-text bg-clip-text text-transparent text-3xl font-semibold title-font mb-4 text-gray-900">
+          <h1 className=" bg-gradient-text bg-clip-text text-transparent text-2xl font-semibold title-font mb-4 text-gray-900">
             ABOUT
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
@@ -22,11 +22,11 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex flex-row flex-wrap justify-center items-start space-x-[6rem]">
+        <div className="flex flex-row font-roboto flex-wrap justify-center items-center lg:space-x-[6rem] md:space-x-[2rem]">
           {aboutSubData.map((data) => (
-            <div className="card" key={data.id}>
+            <div className=" card  md:my-8 my-6" key={data.id}>
               <div className="card-inner ">
-                <div className="card-front shadow-2xl border-l-8  border-b-8  border-blue-500  py-4 opacity-85 flex flex-col">
+                <div className="card-front shadow-2xl border-l-8 border-b-8  border-blue-500 py-4 opacity-85 flex flex-col">
                   <div className=" flex justify-center items-center gap-2">
                     <svg
                       stroke="currentColor"
@@ -40,7 +40,7 @@ const About = () => {
                     >
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                     </svg>
-                    <p className=" text-2xl font-semibold text-black">
+                    <p className=" text-2xl font-medium text-black">
                       {data.title}
                     </p>{" "}
                   </div>
@@ -48,7 +48,7 @@ const About = () => {
                   <div className=" w-full h-full px-4 text-[18px]">
                     <p className=" pt-2">
                       {data.description}
-                      <a className="text-purple-500  mx-auto inline-flex items-center">
+                      <a className="text-purple-500 cursor-pointer  mx-auto inline-flex items-center">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"

@@ -86,7 +86,7 @@ export default About;
 const aboutSubData = [
   {
     id: 0,
-    title: `MISSION`,
+    title: `Mission`,
     description: ` Historical Foundation: In 1908, William J. Mayo hired Harry Harwick to manage the
   business and operations of the Mayo Clinic, pioneering a new leadership model in healthcare:
   the Dyad. At its core, a Dyad is a partnership ⎼ a seamless collaboration between a physician
@@ -108,7 +108,7 @@ const aboutSubData = [
 
   {
     id: 1,
-    title: `VALUES`,
+    title: `Values`,
     description: `Physician Autonomy: We empower physicians to maintain their independence while
   realizing pricing and efficiency benefits from the economies of scale and sophistication of a
   larger health system, without the interference or agenda of private equity involvement. 
@@ -125,7 +125,7 @@ const aboutSubData = [
 
   {
     id: 2,
-    title: `APPROACH`,
+    title: `Approach`,
     description: `Enterprise Risk Management (ERM): At Dyad, we implement the
        COSO ERM and ISO 31000 frameworks to ensure a thorough and effective
        risk management strategy. Our services are assessed through people,

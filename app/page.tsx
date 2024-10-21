@@ -71,7 +71,7 @@ export default function Home() {
                 className="p-4 lg:w-1/3 hover:scale-110 transition-all duration-700"
               >
                 <div className="h-full bg-gray-100 gap-4 shadow-lg bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                  <h1 className="title-font  text-2xl font-medium text-gray-900 mb-3">
+                  <h1 className=" text-2xl font-medium text-gray-900 mb-3">
                     {data.title}
                   </h1>
                   <p className="leading-relaxed mb-3 text-xl">

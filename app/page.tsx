@@ -1,10 +1,10 @@
 "use client";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import Image from "next/image";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Service from "./components/Service";
 import Testimonial from "./components/Testimonial";
 
@@ -22,16 +22,16 @@ export default function Home() {
           <div className=" w-[90%] mx-auto flex flex-wrap">
             <Image
               alt="ecommerce"
-              width={500}
-              height={300}
-              className="lg:w-1/2 w-full max-h-[34rem] object-cover object-center rounded-[6rem]"
+              width={400}
+              height={400}
+              className="lg:w-1/2 w-full max-h-[34rem] mt-10 object-cover object-center rounded-[6rem]"
               src="https://img.freepik.com/free-photo/specialist-giving-prescription-paper-sick-patient-checkup-visit_482257-27197.jpg?size=626&ext=jpg&ga=GA1.1.506489367.1728115941&semt=ais_hybrid"
             />
             <div className="   lg:w-1/2 w-full lg:py-6 mt-6 lg:mt-12 relative  bg-cover bg-center ">
               <div className=" pl-4  h-full">
                 {" "}
                 {/* <span className=" pl-4 text-[3rem]">👨🏻‍⚕️</span> */}
-                <h1 className=" font-cabinetgrotesk   lg:pl-4 pl-2 bg-gradient-text bg-clip-text text-transparent  lg:text-[2.8rem] text-[1.7rem]  title-font font-semibold mb-1">
+                <h1 className=" font-roboto  lg:pl-4  bg-gradient-text bg-clip-text text-transparent  lg:text-[2.8rem] text-[1.7rem]  title-font font-semibold mb-1">
                   We Are Here To Change That Narrative
                 </h1>
                 <p className="leading-[2.2rem] lg:text-[1.4rem] text-[1.2rem] py-2 pl-4">
@@ -68,7 +68,7 @@ export default function Home() {
             {aboutData.map((data) => (
               <div
                 key={data.id}
-                className="p-4 lg:w-1/3 hover:scale-110 transition-all duration-700"
+                className="p-4 lg:w-1/3 hover:scale-105 transition-all  duration-700"
               >
                 <div className="h-full bg-gray-100 gap-4 shadow-lg bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                   <h1 className=" text-2xl font-medium text-gray-900 mb-3">

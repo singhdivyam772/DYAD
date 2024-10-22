@@ -4,8 +4,8 @@ const Contact = () => {
       id="contact"
       className="text-gray-600 pt-[5.5rem] px-6 body-font mb-12 relative "
     >
-      <div className=" shadow-lg  md:px-5 px-8 pt-18 flex flex-col mx-auto  lg:w-2/3 ">
-        <h1 className="text-2xl font-semibold mx-auto bg-gradient-text bg-clip-text text-transparent title-font mb-4 text-gray-900">
+      <div className=" shadow-2xl border rounded-xl  md:px-5 px-8 pt-18 flex flex-col mx-auto  lg:w-2/3 ">
+        <h1 className="text-2xl font-semibold mt-4 mx-auto bg-gradient-text bg-clip-text text-transparent title-font mb-4 text-gray-900">
           Get in Touch
         </h1>
 

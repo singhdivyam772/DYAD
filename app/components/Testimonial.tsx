@@ -51,7 +51,7 @@ const Testimonial = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="px-4 md:w-[30rem] my-4 mx-auto w-[100%] shadow-custom rounded-2xl py-8 space-x-4 "
+              className="px-4 md:w-[30rem] my-4 mx-auto w-[100%] shadow-2xl border rounded-2xl py-8 space-x-4 "
             >
               <div className="h-full flex flex-col items-center text-center">
                 <Image

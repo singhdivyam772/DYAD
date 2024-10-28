@@ -3,7 +3,7 @@ import dyadLogo from "../../assets/DYAD_logo.svg";
 
 const Footer = () => {
   return (
-    <footer className=" text-gray-600 body-font w-full  font-roboto ">
+    <footer className=" text-gray-600 w-full  font-roboto ">
       <div className=" px-5 py-24 mx-auto w-full bg-gray-100 ">
         <div className="flex flex-wrap justify-center items-center  ">
           {/* Column 1 */}

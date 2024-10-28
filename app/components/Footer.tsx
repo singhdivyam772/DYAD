@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className=" text-gray-600 w-full  font-roboto ">
       <div className=" px-5 py-24 mx-auto w-full bg-gray-100 ">
-        <div className="flex flex-wrap justify-center items-center  ">
+        <div className="flex flex-wrap ">
           {/* Column 1 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">
-              Menu
+              MENU
             </h2>
             <nav className="list-none mb-10">
               <li>

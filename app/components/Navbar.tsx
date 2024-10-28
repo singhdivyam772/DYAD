@@ -64,7 +64,7 @@ export default function Navbar() {
               href="#testimonial"
               className={`${navigationMenuTriggerStyle()} text-xl`}
             >
-              Testimonial
+              Our Team
             </NavigationMenuLink>
           </NavigationMenuItem>
 

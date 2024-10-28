@@ -71,9 +71,16 @@ const Contact = () => {
             className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-28 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
           ></textarea>
         </div>
-        <button className="text-white bg-indigo-500 border-0 py-2 mb-5 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        <a className="home-button mx-auto md:w-[30%] my-5 lg:mt-10 mt-2">
           Submit
-        </button>
+          <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
+            <path
+              clip-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
       </div>
     </section>
   );

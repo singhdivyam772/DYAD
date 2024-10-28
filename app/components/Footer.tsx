@@ -4,8 +4,8 @@ import dyadLogo from "../../assets/DYAD_logo.svg";
 const Footer = () => {
   return (
     <footer className=" text-gray-600 body-font w-full  font-roboto ">
-      <div className=" px-5 py-24 mx-auto w-full bg-gray-100">
-        <div className="flex flex-wrap md:text-left text-center order-first">
+      <div className=" px-5 py-24 mx-auto w-full bg-gray-100 ">
+        <div className="flex flex-wrap justify-center items-center  ">
           {/* Column 1 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-xl mb-3">
@@ -173,7 +173,7 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="bg-gray-300">
-        <div className="container px-5 py-6 flex items-center sm:flex-row flex-col">
+        <div className="container px-5 py-3 flex items-center sm:flex-row flex-col">
           <a
             href="#home"
             className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
